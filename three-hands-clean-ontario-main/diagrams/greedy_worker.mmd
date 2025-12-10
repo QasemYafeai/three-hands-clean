@@ -1,0 +1,7 @@
+flowchart TD
+    S[Start worker] --> I[Set currentLocation = base<br/>currentTime = shiftStart]
+    I --> L{Any unassigned job<br/>that fits time window<br/>and shift?}
+    L -->|No| R[Return to base<br/>finish route]
+    L -->|Yes| P[Pick nearest feasible job<br/>(min travel time)]
+    P --> U[Assign job<br/>update time & location]
+    U --> L

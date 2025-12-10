@@ -1,0 +1,6 @@
+graph TD
+    A[Input JSON<br/>base, workers, jobs, distances] --> B[Build complete weighted graph<br/>(adjacency matrix)]
+    B --> C[Prim's Algorithm<br/>Compute MST]
+    C --> D[DFS on MST<br/>get visiting order]
+    D --> E[Greedy Scheduler<br/>assign jobs to workers]
+    E --> F[Worker Schedules + Unassigned Jobs]

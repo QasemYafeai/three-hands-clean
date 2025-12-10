@@ -1,0 +1,18 @@
+{
+  "base": {
+    "id": "Depot",
+    "x": 0,
+    "y": 0
+  },
+  "workers": [
+    { "id": "Team1", "maxMinutes": 480 },
+    { "id": "Team2", "maxMinutes": 480 }
+  ],
+  "jobs": [
+    { "id": "Job-A", "clientName": "Downtown Condo", "x": 2,  "y": 1,  "duration": 120 },
+    { "id": "Job-B", "clientName": "West End House", "x": -3, "y": 1,  "duration": 180 },
+    { "id": "Job-C", "clientName": "North Ridge",    "x": 1,  "y": 4,  "duration": 90 },
+    { "id": "Job-D", "clientName": "South Town",     "x": 0,  "y": -4, "duration": 150 },
+    { "id": "Job-E", "clientName": "East Mall",      "x": 4,  "y": 0,  "duration": 120 }
+  ]
+}
